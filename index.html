@@ -499,7 +499,7 @@ mark {
 let i = 1;
 
 while(i < 5){
-  i = i++*Math.PI*Math.random();
+  i = i++*Math.PI*Math.random().Math.floor();
   }
 
 //try removing the i = part
@@ -516,8 +516,8 @@ class content{
 }
 let input = window.prompt('What City Are You In?');
 
-let bodycontent = `Enjoy a relaxing and wonderful massage in ${input}!`
-let content1 = new content(input,`⭐⭐⭐⭐⭐ ${i} Star Rated Massage in ${this.city}`, bodycontent);
+let bodycontent = `Enjoy a relaxing and wonderful massage in ${input}.toUpperCase()!`
+let content1 = new content(input,`⭐⭐⭐⭐⭐ ${i} Star Rated Massage in $input`, bodycontent);
 
 
 document.getElementById("content").innerHTML = content1.body;
