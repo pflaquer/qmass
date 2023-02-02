@@ -495,6 +495,7 @@ mark {
 
 //src is MARIO @ https://codepen.io/max131/pen/NWpmvML
 
+	
 let i = 1;
 
 while(i < 5){
@@ -513,9 +514,10 @@ class content{
     }
   }
 }
+let input = window.prompt('What City Are You In?');
+let content1 = new content(input,`⭐⭐⭐⭐⭐ ${i} Star Rated Massage in ${this.city}`, bodycontent);
+let bodycontent = `Enjoy a relaxing and wonderful massage in ${content1.city}!`
 
-let bodycontent = `Enjoy a relaxing and wonderful massage in ${this.city}!`
-let content1 = new content('quakertown',`⭐⭐⭐⭐⭐ ${i} Star Rated Massage in ${this.city}`, bodycontent);
 
 document.getElementById("content").innerHTML = content1.body;
 document.getElementById("title").innerHTML = content1.title;
